@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Abel } from "next/font/google";
 import "./globals.css";
+
+const abel = Abel({ subsets: ["latin"], 
+  weight: ["400"],
+  variable: "--font-abel",
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,9 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className=" w-full bg-gradient-to-b hover:from-[#32027e] hover:to-black hover:bg-gradient-to-br from-black   to-[#32027e] transition-all duration-10000
+ " lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${abel.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

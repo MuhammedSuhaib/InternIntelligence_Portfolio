@@ -3,13 +3,13 @@ import Image from "next/image";
 
 function Technologies() {
   return (
-    <div className="h-full flex flex-col items-center justify-center gap-6 py-10">
+    <div className="h-full w-full  flex flex-col items-center justify-center gap-6 py-10">
       <h1 className="text-6xl mt-6 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950">
         Technologies
       </h1>
-      <div className="grid grid-rows-2 gap-6">
+      <div className=" flex flex-row sm:flex-col  gap-6">
         {/* Row 1 */}
-        <ul className="flex gap-14 text-2xl bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950  ">
+        <ul className="flex sm:flex-row flex-col  gap-14 text-2xl bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950  ">
           <li className="flex flex-col items-center">
             <Image
               src="/h.png"
@@ -50,7 +50,7 @@ function Technologies() {
           </li>
         </ul>
         {/* Row 2 */}
-        <ul className="flex gap-6  text-2xl bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950     ">
+        <ul className="flex sm:flex-row flex-col gap-6  text-2xl bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950     ">
           <li className="flex flex-col items-center">
             <Image src="/nodejs.png" alt="Node.js" width={100} height={100} />
             <p className="text-center mt-2">Node.js</p>
@@ -68,7 +68,7 @@ function Technologies() {
             />
             <p className="text-center mt-2">Next.js</p>
           </li>
-          <li className="flex flex-col items-center">
+          <li className="flex  flex-col items-center">
             <Image
               src="/tailwind.png"
               alt="Tailwind CSS"

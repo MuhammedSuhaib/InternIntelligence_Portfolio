@@ -30,8 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className=" w-full bg-gradient-to-b hover:from-[#32027e] hover:to-black hover:bg-gradient-to-br from-black   to-[#32027e] transition-all duration-10000
- " lang="en">
+    <html className=" " lang="en">
       <body
         className={`${abel.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >

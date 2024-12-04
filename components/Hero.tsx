@@ -2,9 +2,9 @@ import React from 'react'
 
 function Main() {
   return (
-    <div>
+    <div >
       <div className="flex flex-col justify-center items-center text-white">
-      <h1 className="text-7xl bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl from-yellow-200 via-violet-500 to-fuchsia-950  " >
+      <h1 className="text-5xl sm:text-7xl text-center   bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl from-yellow-200 via-violet-500 to-fuchsia-950  " >
       𝔐𝔲𝔥𝔞𝔪𝔪𝔞𝔡 Ꮥ𝔲𝔥𝔞𝔦𝔟
 </h1>
 <h2 className="text-4xl mt-6 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950  " > &lt; Ꮤeb 𐌃eveloper/&gt; 

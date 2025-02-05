@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { Merienda } from "next/font/google";
+const merienda = Merienda({ subsets: ["latin"], weight: ["400", "700"] });
 
 function Technologies() {
   return (
     <div className="h-full w-full  flex flex-col items-center justify-center gap-6 py-10">
-      <h1 className="text-6xl mt-6 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950">
+      <h1 className={` ${merienda.className} pb-5 text-4xl md:text-6xl mt-6 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950`}>
         Technologies
       </h1>
       <div className=" flex flex-row sm:flex-col  gap-6">

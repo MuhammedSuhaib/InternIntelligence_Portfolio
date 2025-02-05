@@ -7,6 +7,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import { Merienda } from "next/font/google";
+const merienda = Merienda({ subsets: ["latin"], weight: ["400", "700"] });
 
 const projects = [
   { title: "E-commerce Website", description: "A full-stack e-commerce platform built with Next.js and Tailwind CSS.", image: "/Hekto.png" },
@@ -23,7 +25,7 @@ const projects = [
   { title: "CLI Ghost Image", description: "Displays a ghost image in the terminal using Chalk and animations.", image: "/ghoost.jpg" },
   { title: "CLI Quiz App", description: "A CLI-based quiz app built with TypeScript, Inquirer, and Chalk.", image: "/Quiz.jpg" },
   { title: "CLI Adventure Game", description: "A text-based adventure game created with TypeScript and CLI libraries.", image: "/g.jpg" },
-  { title: "CLI Student Management System", description: "A CLI-based student management system built with TypeScript.", image: "/todos.jpg" },
+  { title: "CLI Student Management System", description: "A CLI-based student management system built with TypeScript.", image: "/std.jpg" },
   { title: "CLI To-Do App", description: "A simple CLI to-do list application using TypeScript and Inquirer.", image: "/todos.jpg" },
   { title: "CLI ATM Simulator", description: "A command-line ATM simulation built with TypeScript.", image: "/atm.jpg" },
   { title: "CLI Currency Converter", description: "A CLI app for converting currencies using TypeScript.", image: "/crr.jpg" },
@@ -36,7 +38,7 @@ const projects = [
 function Projects() {
   return (
     <div id="pro" className="flex flex-col items-center justify-center gap-6 py-10 px-6">
-      <h1 className="mt-6 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 bg-clip-text text-6xl text-transparent">
+      <h1 className={`${merienda.className} mt-6 pb-16 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 bg-clip-text text-6xl text-transparent`}>
         Projects
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -50,8 +52,8 @@ function Projects() {
                 alt={project.title}
                 className="rounded-t-lg object-cover w-full h-48"
               />
-            </CardHeader>
-            <CardContent className="p-4">
+            </CardHeader  >
+            <CardContent className="p-4 bg-[#b916fa1f]">
               <CardTitle className="text-lg font-semibold text-center">
                 {project.title}
               </CardTitle>

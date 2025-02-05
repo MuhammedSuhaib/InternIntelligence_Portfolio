@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Abel } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const abel = Abel({ subsets: ["latin"], 
   weight: ["400"],
@@ -30,10 +31,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className=" " lang="en">
+    <html lang="en">
       <body
-        className={`${abel.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${abel.className} ${geistSans.variable} ${geistMono.variable} antialiased  bg-gradient-to-b from-black to-[#26045c] transition-all hover:bg-gradient-to-br hover:from-[#32027e] hover:to-black`}
       >
+        <Header />
         {children}
       </body>
     </html>

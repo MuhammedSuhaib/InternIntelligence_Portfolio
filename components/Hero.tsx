@@ -1,12 +1,14 @@
 import React from "react";
+import { Merienda } from "next/font/google";
+const merienda = Merienda({ subsets: ["latin"], weight: ["400", "700"] });
 
 function Main() {
   return (
     <div>
       <div className="flex flex-col justify-center items-center text-white">
-        <h1 className="text-5xl sm:text-7xl text-center   bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl from-yellow-200 via-violet-500 to-fuchsia-950  ">
+        <h1 className="text-5xl  from-fuchsia-400 via-violet-600 to-emerald-300hover:to-fuchsia-950 sm:text-7xl text-center bg-gradient-to-br text-transparent bg-clip-text hover:bg-gradient-to-tl">
         𝔐𝔲𝔥𝔞𝔪𝔪𝔞𝔡 <span className="text-8xl"> ͯś</span>𝔲𝔥𝔞𝔦𝔟     </h1>
-        <h2 className="text-4xl mt-6 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950  ">
+        <h2 className={`${merienda.className} text-4xl ml-7 md:ml-0 mt-6 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950 `}>
           {" "}
           &lt; Ꮤeb 𐌃eveloper/&gt;
         </h2>

@@ -21,21 +21,11 @@ function Technologies() {
             <p className="text-center mt-2">HTML</p>
           </li>
           <li className="flex flex-col items-center">
-            <Image
-              src="/c.png"
-              alt="CSS"
-              width={100}
-              height={100}
-            />
+            <Image src="/c.png" alt="CSS" width={100} height={100} />
             <p className="text-center mt-2">CSS</p>
           </li>
           <li className="flex flex-col items-center">
-            <Image
-              src="/js.png"
-              alt="JavaScript"
-              width={100}
-              height={100}
-            />
+            <Image src="/js.png" alt="JavaScript" width={100} height={100} />
             <p className="text-center mt-2">JavaScript</p>
           </li>
           <li className="flex flex-col items-center">
@@ -60,12 +50,7 @@ function Technologies() {
             <p className="text-center mt-2">npm</p>
           </li>
           <li className="flex flex-col items-center">
-            <Image
-              src="/nextjs.png"
-              alt="Next.js"
-              width={100}
-              height={100}
-            />
+            <Image src="/nextjs.png" alt="Next.js" width={100} height={100} />
             <p className="text-center mt-2">Next.js</p>
           </li>
           <li className="flex  flex-col items-center">

@@ -25,13 +25,13 @@ const projects = [
   { title: "CLI Ghost Image", description: "Displays a ghost image in the terminal using Chalk and animations.", image: "/ghoost.jpg" },
   { title: "CLI Quiz App", description: "A CLI-based quiz app built with TypeScript, Inquirer, and Chalk.", image: "/Quiz.jpg" },
   { title: "CLI Adventure Game", description: "A text-based adventure game created with TypeScript and CLI libraries.", image: "/g.jpg" },
-  { title: "CLI Student Management System", description: "A CLI-based student management system built with TypeScript.", image: "/std.jpg" },
+  { title: "CLI Student Management System", description: "A CLI-based student management system built with TypeScript.", image: "/Std.jpg" },
   { title: "CLI To-Do App", description: "A simple CLI to-do list application using TypeScript and Inquirer.", image: "/todos.jpg" },
   { title: "CLI ATM Simulator", description: "A command-line ATM simulation built with TypeScript.", image: "/atm.jpg" },
   { title: "CLI Currency Converter", description: "A CLI app for converting currencies using TypeScript.", image: "/crr.jpg" },
   { title: "CLI Word Counter", description: "A word-counting tool built for the terminal.", image: "/w.jpg" },
-  { title: "CLI Number Guessing Game", description: "A CLI game where users guess a number.", image: "/Guess.jpg" },
-  { title: "CLI Calculator", description: "A simple command-line calculator using TypeScript.", image: "/simple.jpg" },
+  { title: "CLI Number Guessing Game", description: "A CLI game where users guess a number.", image: "/guess.jpg" },
+  { title: "CLI Calculator", description: "A simple command-line calculator using TypeScript.", image: "/Simple.jpg" },
   { title: "Node.js TypeScript Tasks", description: "A collection of 45 TypeScript tasks built with Node.js.", image: "/45.png" },
 ];
 

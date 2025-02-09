@@ -55,11 +55,11 @@ function Projects() {
                 />
               </CardHeader  >
               <CardContent className="p-4 bg-[#b916fa1f]">
-                <CardTitle className="text-lg font-semibold text-center">
+                <CardTitle className="text-lg font-semibold text-center text-white">
                   {project.title}
                 </CardTitle>
               </CardContent>
-              <CardFooter className="p-4 text-center text-sm text-gray-600">
+              <CardFooter className="p-4 text-center text-sm text-white">
                 {project.description}
               </CardFooter></a>
           </Card>

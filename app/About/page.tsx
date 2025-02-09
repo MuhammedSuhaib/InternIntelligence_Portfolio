@@ -93,7 +93,7 @@ export default function Timeline() {
                     className="flex items-center space-x-3 text-white hover:text-indigo-200 transition duration-300"
                 >
                     <Image
-                        src="/Github.png"
+                        src="/github.png"
                         width={357}
                         height={357}
                         alt="GitHub"

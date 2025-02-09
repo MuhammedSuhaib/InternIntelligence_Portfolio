@@ -41,11 +41,11 @@ export default function Home() {
             className="flex items-center space-x-3 text-white hover:text-indigo-200 transition duration-300"
           >
             <Image
-              src="/Github.png"
+              src="/github.png"
               width={357}
               height={357}
               alt="GitHub"
-              className="size-16 rounded-lg bg-[#26045c]"
+              className="size-16 rounded-lg"
             />
           </a>
           <Link href="/About" className="px-4 py-2 bg-[#5c0442] text-white rounded-md">About Me</Link>

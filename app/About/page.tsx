@@ -97,7 +97,7 @@ export default function Timeline() {
                         width={357}
                         height={357}
                         alt="GitHub"
-                        className="size-16 rounded-lg bg-[#26045c]"
+                        className="size-16 rounded-lg"
                     />
                 </a>
                 <Link href="/co" className="px-4 py-2 bg-[#ff5100] text-white rounded-md ">Contact Page</Link>

@@ -10,7 +10,9 @@ function Header() {
     <header className="mb-10">
       <div className="p-5 m-0 flex justify-between rounded-md shadow-md shadow-[#d431dad8] hover:shadow-[#8df4f7]">
         <strong className="text-4xl mt-5 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:from-yellow-200 hover:to-fuchsia-950">
+        <Link href="/">
           𝔐𝔲𝔥𝔞𝔪𝔪𝔞𝔡 ͯś𝔲𝔥𝔞𝔦𝔟
+          </Link>
         </strong>
         <nav className="flex justify-between items-center">
           <ul className={`${merienda.className}  text-white space-x-4 hidden md:flex justify-center items-center`}>

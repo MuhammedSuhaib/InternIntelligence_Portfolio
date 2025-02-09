@@ -93,11 +93,11 @@ export default function Timeline() {
                     className="flex items-center space-x-3 text-white hover:text-indigo-200 transition duration-300"
                 >
                     <Image
-                        src="/github.png"
-                        width={357}
-                        height={357}
+                        src="/git-logo.png"
+                        width={920}
+                        height={460}
                         alt="GitHub"
-                        className="size-16 rounded-lg"
+                        className="w-20 h-16 "
                     />
                 </a>
                 <Link href="/co" className="px-4 py-2 bg-[#ff5100] text-white rounded-md ">Contact Page</Link>

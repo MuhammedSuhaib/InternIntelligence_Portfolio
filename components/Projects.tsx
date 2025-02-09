@@ -21,7 +21,7 @@ const projects = [
   { link: `https://tailwind-css-phi-woad.vercel.app/`, title: "Space Exploration Landing Page", description: "A Next.js landing page showcasing space exploration.", image: "/space.jpg" },
   { link: `https://my-1st-responsive-site.vercel.app/`, title: "Next.js Landing Page", description: "A landing page built with Next.js and pure CSS modules.", image: "/resp.jpg" },
   { link: `https://next-js-page-routing.vercel.app/`, title: "Next.js Hot Reload Demo", description: "A project demonstrating Next.js Hot Reload feature.", image: "/hotReload.png" },
-  { link: `https://hackathon-milestone-1-2-three.vercel.app/`, title: "static Resume Builder", description: "A static resume  using pure HTML and CSS.", image: "/plain.jpeg" },
+  { link: `https://hackathon-milestone-1-2-three.vercel.app/`, title: "static Resume Builder", description: "A static resume  using pure HTML and CSS.", image: "/plain.png" },
   { link: `https://www.linkedin.com/posts/suhaib1_activity-7238076836780343296-H6YC?utm_source=social_share_send&utm_medium=member_desktop_web`, title: "CLI Ghost Image", description: "Displays a ghost image in the terminal using Chalk and animations.", image: "/ghoost.jpg" },
   { link: `https://github.com/MuhammedSuhaib/Fast-Quiz`, title: "CLI Quiz App", description: "A CLI-based quiz app built with TypeScript, Inquirer, and Chalk.", image: "/Quiz.jpg" },
   { link: `https://github.com/MuhammedSuhaib/Adventure-game`, title: "CLI Adventure Game", description: "A text-based adventure game created with TypeScript and CLI libraries.", image: "/g.jpg" },

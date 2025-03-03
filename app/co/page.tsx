@@ -12,23 +12,47 @@ const ContactPage = () => {
             Contact Me
           </h2>
 
-          {/* Contact Form */}
-          {/* <form
+          {/* Contact Form with FormSubmit */}
+          <form
+            action="https://formsubmit.co/umaializa577@gmail.com
+"
+            method="POST"
             onSubmit={(e) => {
-              e.preventDefault(); // Prevent page reload
-              Swal.fire({
-                title: `Message Sent!`,
-                icon: "success",
-                confirmButtonText: "OK",
+              e.preventDefault(); // Prevent default form behavior
+
+              // Submit form using FormSubmit API
+              const form = e.target as HTMLFormElement;
+              fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+              }).then((response) => {
+                if (response.ok) {
+                  Swal.fire({
+                    title: "Message Sent!",
+                    icon: "success",
+                    confirmButtonText: "OK",
+                  });
+                  form.reset(); // Clear the form after successful submission
+                } else {
+                  Swal.fire({
+                    title: "Error!",
+                    text: "Something went wrong. Try again later.",
+                    icon: "error",
+                    confirmButtonText: "OK",
+                  });
+                }
               });
             }}
             className="space-y-6"
           >
+            {/* Hidden Honeypot Field to Prevent Spam */}
+            <input type="text" name="_honey" style={{ display: "none" }} />
+
+            {/* Optional: Redirect to a Thank You Page */}
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+
             <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-white"
-              >
+              <label htmlFor="name" className="block text-sm font-medium text-white">
                 Name
               </label>
               <input
@@ -42,10 +66,7 @@ const ContactPage = () => {
             </div>
 
             <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-white"
-              >
+              <label htmlFor="email" className="block text-sm font-medium text-white">
                 Email
               </label>
               <input
@@ -60,10 +81,7 @@ const ContactPage = () => {
             </div>
 
             <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-white"
-              >
+              <label htmlFor="message" className="block text-sm font-medium text-white">
                 Message
               </label>
               <textarea
@@ -82,91 +100,23 @@ const ContactPage = () => {
             >
               Send Message
             </button>
-          </form> */}
-<form
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  onSubmit={(e) => {
-    e.preventDefault(); // Prevent default browser behavior
-    Swal.fire({
-      title: `Message Sent!`,
-      icon: "success",
-      confirmButtonText: "OK",
-    });
-  }}
-  className="space-y-6"
->
-  {/* Hidden Input for Netlify */}
-  <input type="hidden" name="form-name" value="contact" />
-  <p className="hidden">
-    <label>
-      Don’t fill this out if you’re human: 
-      <input name="bot-field" />
-    </label>
-  </p>
-
-  {/* Name Field */}
-  <div>
-    <label htmlFor="name" className="block text-sm font-medium text-white">
-      Name
-    </label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      required
-      className="mt-1 p-4 w-full rounded-md border border-gray-300 bg-white/5 text-white shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400 transition duration-300 hover:bg-white/10"
-      placeholder="Your name"
-    />
-  </div>
-
-  {/* Email Field */}
-  <div>
-    <label htmlFor="email" className="block text-sm font-medium text-white">
-      Email
-    </label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      required
-      autoComplete="email"
-      className="mt-1 p-4 w-full rounded-md border border-gray-300 bg-white/5 text-white shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400 transition duration-300 hover:bg-white/10"
-      placeholder="your@email.com"
-    />
-  </div>
-
-  {/* Message Field */}
-  <div>
-    <label htmlFor="message" className="block text-sm font-medium text-white">
-      Message
-    </label>
-    <textarea
-      id="message"
-      name="message"
-      rows={4}
-      required
-      className="mt-1 p-4 w-full rounded-md border border-gray-300 bg-white/5 text-white shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400 transition duration-300 hover:bg-white/10"
-      placeholder="Your message"
-    />
-  </div>
-
-  {/* Submit Button */}
-  <button
-    type="submit"
-    className="w-full py-3 px-4 rounded-md bg-indigo-600 text-white font-medium shadow-md hover:bg-indigo-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transform hover:scale-105"
-  >
-    Send Message
-  </button>
-</form>
+          </form>
 
           {/* Contact Details */}
           <div className="mt-8 space-y-4 text-center text-white">
-            <p>Email: <a href="mailto:muhammedsuhaib@example.com" className="hover:text-indigo-200">muhammedsuhaib@example.com</a></p>
+            <p>
+              Email:{" "}
+              <a href="mailto:muhammedsuhaib@example.com" className="hover:text-indigo-200">
+                muhammedsuhaib@example.com
+              </a>
+            </p>
             <p>Address: 123 Example Street, City, Country</p>
-            <p>Phone: <a href="tel:+15551234567" className="hover:text-indigo-200">+1 (555) 123-4567</a></p>
+            <p>
+              Phone:{" "}
+              <a href="tel:+15551234567" className="hover:text-indigo-200">
+                +1 (555) 123-4567
+              </a>
+            </p>
           </div>
 
           {/* Social Media Links */}

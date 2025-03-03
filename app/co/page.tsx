@@ -13,7 +13,7 @@ const ContactPage = () => {
           </h2>
 
           {/* Contact Form */}
-          <form
+          {/* <form
             onSubmit={(e) => {
               e.preventDefault(); // Prevent page reload
               Swal.fire({
@@ -82,7 +82,85 @@ const ContactPage = () => {
             >
               Send Message
             </button>
-          </form>
+          </form> */}
+<form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  onSubmit={(e) => {
+    e.preventDefault(); // Prevent default browser behavior
+    Swal.fire({
+      title: `Message Sent!`,
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+  }}
+  className="space-y-6"
+>
+  {/* Hidden Input for Netlify */}
+  <input type="hidden" name="form-name" value="contact" />
+  <p className="hidden">
+    <label>
+      Don’t fill this out if you’re human: 
+      <input name="bot-field" />
+    </label>
+  </p>
+
+  {/* Name Field */}
+  <div>
+    <label htmlFor="name" className="block text-sm font-medium text-white">
+      Name
+    </label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      className="mt-1 p-4 w-full rounded-md border border-gray-300 bg-white/5 text-white shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400 transition duration-300 hover:bg-white/10"
+      placeholder="Your name"
+    />
+  </div>
+
+  {/* Email Field */}
+  <div>
+    <label htmlFor="email" className="block text-sm font-medium text-white">
+      Email
+    </label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      autoComplete="email"
+      className="mt-1 p-4 w-full rounded-md border border-gray-300 bg-white/5 text-white shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400 transition duration-300 hover:bg-white/10"
+      placeholder="your@email.com"
+    />
+  </div>
+
+  {/* Message Field */}
+  <div>
+    <label htmlFor="message" className="block text-sm font-medium text-white">
+      Message
+    </label>
+    <textarea
+      id="message"
+      name="message"
+      rows={4}
+      required
+      className="mt-1 p-4 w-full rounded-md border border-gray-300 bg-white/5 text-white shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400 transition duration-300 hover:bg-white/10"
+      placeholder="Your message"
+    />
+  </div>
+
+  {/* Submit Button */}
+  <button
+    type="submit"
+    className="w-full py-3 px-4 rounded-md bg-indigo-600 text-white font-medium shadow-md hover:bg-indigo-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transform hover:scale-105"
+  >
+    Send Message
+  </button>
+</form>
 
           {/* Contact Details */}
           <div className="mt-8 space-y-4 text-center text-white">

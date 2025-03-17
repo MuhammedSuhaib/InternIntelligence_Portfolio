@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     apple: "/apple-icon-180x180.png", // For iOS devices
     shortcut: "/favicon.ico", // Legacy support
   },
+  other: {
+    "google-site-verification": "it3bdI8wxU7vBHv7oC3MIfPf0bPZEZbNI84zw7ZdYSw",
+  },
 };
 
 

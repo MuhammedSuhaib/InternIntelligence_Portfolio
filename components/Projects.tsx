@@ -10,6 +10,7 @@ import { Merienda } from "next/font/google";
 const merienda = Merienda({ subsets: ["latin"], weight: ["400", "700"] });
 
 const projects = [
+  
   { link: `https://muhammedsuhaibhackathon2.vercel.app/`, title: "E-commerce Website", description: "A full-stack e-commerce platform built with Next.js and Tailwind CSS.", image: "/Hekto.png" },
   { link: `https://hackathon-milestone-3-4-5-alpha.vercel.app/`, title: "Interactive Resume Builder", description: "A resume builder with interactive features using pure HTML and CSS.", image: "/resume.jpg" },
   { link: `https://heto-ui-clone.netlify.app/`, title: "Pixel-Perfect E-commerce Clone", description: "A precise, pixel-perfect recreation of an e-commerce website.", image: "/px.jpeg" },

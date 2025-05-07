@@ -6,8 +6,8 @@ function Pic() {
       {/* Profile Picture Section */}
 
       <Image
-        src="/me.jpg"
-        alt="Profile Picture"
+        src="/muhammad-suhaib.jpg"
+        alt="Muhammad Suhaib's Portfolio Picture"
         width={250}
         height={250}
         className="rounded-full p-3 ring-[6px] ring-[#d431dad8] shadow-2xl shadow-[#d431dad8] hover:shadow-[#c58bf5] hover:ring-[#a245f8] "

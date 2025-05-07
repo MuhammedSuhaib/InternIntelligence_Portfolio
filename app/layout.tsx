@@ -67,6 +67,9 @@ export const metadata: Metadata = {
     apple: "/apple-icon-180x180.png",
     shortcut: "/favicon.ico",
   },
+  other: {
+    "google-site-verification": "it3bdI8wxU7vBHv7oC3MIfPf0bPZEZbNI84zw7ZdYSw",
+  },
 };
 
 export default function RootLayout({
@@ -86,3 +89,4 @@ export default function RootLayout({
     </html>
   );
 }
+// 

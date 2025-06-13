@@ -51,30 +51,35 @@ function Projects() {
       <h1 className={`${merienda.className} mt-6 pb-16 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 bg-clip-text text-6xl text-transparent`}>
         Projects
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {projects.map((project, index) => (
-          <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-            <a href={project.link} target="_blank" rel="noopener noreferrer" >
-              <CardHeader>
-                <Image
-                  src={project.image}
-                  width={400}
-                  height={200}
-                  alt={project.title}
-                  className="rounded-t-lg object-cover w-full h-48"
-                />
-              </CardHeader  >
-              <CardContent className="p-4 bg-[#b916fa1f]">
-                <CardTitle className="text-lg font-semibold text-center text-white">
-                  {project.title}
-                </CardTitle>
-              </CardContent>
-              <CardFooter className="p-4 text-center text-sm text-white">
-                {project.description}
-              </CardFooter></a>
-          </Card>
-        ))}
-      </div>
+      <ul>
+        <li className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {projects.map((project, index) => (
+            <Card
+              key={index}
+              className="overflow-hidden transform transition duration-300 hover:scale-110"
+            >
+              <a href={project.link} target="_blank" rel="noopener noreferrer" >
+                <CardHeader>
+                  <Image
+                    src={project.image}
+                    width={400}
+                    height={200}
+                    alt={project.title}
+                    className="rounded-t-lg object-cover w-full h-48"
+                  />
+                </CardHeader  >
+                <CardContent className="p-4 bg-[#b916fa1f]">
+                  <CardTitle className="text-lg font-semibold text-center text-white">
+                    {project.title}
+                  </CardTitle>
+                </CardContent>
+                <CardFooter className="p-4 text-center text-sm text-white">
+                  {project.description}
+                </CardFooter></a>
+            </Card>
+          ))}
+        </li>
+      </ul>
     </div>
   );
 }

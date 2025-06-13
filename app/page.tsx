@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Pic />
       <Main />
-      <section id="technologies">
+      <section id="technologies" className="flex justify-center items-center">
         <Technologies />
       </section>
       <section id="projects">
@@ -25,6 +25,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-3 text-white hover:text-indigo-200 transition duration-300"
+            title="LinkedIn Profile"
           >
             <Image
               src="/linkedin.png"
@@ -39,6 +40,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-3 text-white hover:text-indigo-200 transition duration-300"
+            title="GitHub Profile"
           >
             <Image
               src="/git-logo.png"

@@ -5,7 +5,8 @@ import Main from "../components/Hero";
 import Technologies from "@/components/Technologies";
 import Projects from "@/components/Projects";
 import Link from "next/link";
-import Image from "next/image";
+import { Github, Linkedin, Mailbox, ScrollText } from "lucide-react";
+
 export default function Home() {
   return (
     <>
@@ -20,40 +21,24 @@ export default function Home() {
       <section className="w-full text-center py-10">
         <p className="text-white text-lg mb-3">Click here for:</p>
         <div className="flex flex-col md:flex-row justify-center items-center gap-5">
-          <a
-            href="https://www.linkedin.com/in/suhaib1/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center space-x-3 text-white hover:text-indigo-200 transition duration-300"
-            title="LinkedIn Profile"
-          >
-            <Image
-              src="/linkedin.png"
-              width={500}
-              height={172}
-              alt="LinkedIn"
-              className="w-14 h-10 " 
-            />
+          <a href="https://github.com/MuhammedSuhaib" target="_blank" rel="noopener noreferrer" title="GitHub Profile" className="flex flex-col items-center text-white">
+            <Github className="size-10" />
+            <span>GitHub Profile</span>
           </a>
-          <a
-            href="https://github.com/MuhammedSuhaib"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center space-x-3 text-white hover:text-indigo-200 transition duration-300"
-            title="GitHub Profile"
-          >
-            <Image
-              src="/git-logo.png"
-              width={920}
-              height={460}
-              alt="GitHub"
-              className="w-20 h-16 invert"
-            />
+          <a href="https://www.linkedin.com/in/suhaib1/" target="_blank" rel="noopener noreferrer" title="Linkedin Profile" className="flex flex-col items-center text-white">
+            <Linkedin className="size-10" />
+            <span>Linkedin Profile</span>
           </a>
-          <Link href="/About" className="px-4 py-2 bg-[#5c0442] text-white rounded-md ">About Me</Link>
-          <Link href="/co" className="px-4 py-2 bg-[#ff5100] text-white rounded-md ">Contact Me</Link>
+          <Link href="/co" className="flex flex-col items-center text-white">
+            <Mailbox className="size-10" />
+            <span>Contact Me</span>
+          </Link>
+          <Link href="/About" className="flex flex-col items-center text-white">
+            <ScrollText className="size-10" />
+            <span>About Me</span>
+          </Link>
         </div>
       </section>
     </>
   );
-}
+} 

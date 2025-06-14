@@ -1,5 +1,5 @@
+import { Github, House, Linkedin, Mailbox } from "lucide-react";
 import { Merienda, Montserrat } from "next/font/google";
-import Image from "next/image";
 import Link from "next/link";
 
 const merienda = Merienda({ subsets: ["latin"], weight: ["400", "700"] });
@@ -70,38 +70,23 @@ export default function Timeline() {
             ))}
             {/* Buttons  */}
             <p className="text-white text-lg mb-3">Click here for:</p>
-            <section className="flex flex-col md:flex-row justify-center items-center  gap-10 mt-6">
-
-                <a
-                    href="https://www.linkedin.com/in/suhaib1/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-white hover:text-indigo-200 transition duration-300"
-                >
-                    <Image
-                        src="/linkedin.png"
-                        width={500}
-                        height={172}
-                        alt="LinkedIn"
-                        className="w-14 h-10 "
-                    />
+            <section className="flex flex-col md:flex-row justify-center items-center gap-5">
+                <a href="https://github.com/MuhammedSuhaib" target="_blank" rel="noopener noreferrer" title="GitHub Profile" className="flex flex-col items-center text-white">
+                    <Github className="size-10" />
+                    <span>GitHub Profile</span>
                 </a>
-                <a
-                    href="https://github.com/MuhammedSuhaib"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-white hover:text-indigo-200 transition duration-300"
-                >
-                    <Image
-                        src="/git-logo.png"
-                        width={920}
-                        height={460}
-                        alt="GitHub"
-                        className="w-20 h-16 "
-                    />
+                <a href="https://www.linkedin.com/in/suhaib1/" target="_blank" rel="noopener noreferrer" title="Linkedin Profile" className="flex flex-col items-center text-white">
+                    <Linkedin className="size-10" />
+                    <span>Linkedin Profile</span>
                 </a>
-                <Link href="/co" className="px-4 py-2 bg-[#ff5100] text-white rounded-md ">Contact Page</Link>
-                <Link href="/" className="px-4 py-2 bg-[#5c0442] text-white rounded-md"> Back to Home</Link>
+                <Link href="/co" className="flex flex-col items-center text-white">
+                    <Mailbox className="size-10" />
+                    <span>Contact Me</span>
+                </Link>
+                <Link href="/" className="flex flex-col items-center text-white">
+                    <House className="size-10" />
+                    <span>Home</span>
+                </Link>
             </section>
         </div>
     );

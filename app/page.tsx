@@ -47,10 +47,10 @@ export default function Home() {
               width={920}
               height={460}
               alt="GitHub"
-              className="w-20 h-16 "
+              className="w-20 h-16 invert"
             />
           </a>
-          <Link href="/About" className="px-4 py-2 bg-[#5c0442] text-white rounded-md">About Me</Link>
+          <Link href="/About" className="px-4 py-2 bg-[#5c0442] text-white rounded-md ">About Me</Link>
           <Link href="/co" className="px-4 py-2 bg-[#ff5100] text-white rounded-md ">Contact Me</Link>
         </div>
       </section>

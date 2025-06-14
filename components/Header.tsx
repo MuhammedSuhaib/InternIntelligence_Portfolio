@@ -19,8 +19,8 @@ function Header() {
             <li><Link href="/">Home</Link></li>
             <li><Link href="/#technologies">Technologies</Link></li>
             <li><Link href="/#projects">Projects</Link></li>
-            <li><Link href="/co">Contact</Link></li>
-            <li><Link href="/About">About Me</Link></li>
+            <li><Link href="/contact-us">Contact</Link></li>
+            <li><Link href="/about-me">About Me</Link></li>
           </ul>
           <span className="md:hidden">
             <Sheet>
@@ -32,8 +32,8 @@ function Header() {
                   <li><Link href="/">Home</Link></li>
                   <li><Link href="/#technologies">Technologies</Link></li>
                   <li><Link href="/#projects">Projects</Link></li>
-                  <li><Link href="/co">Contact</Link></li>
-                  <li><Link href="/About">About Me</Link></li>
+                  <li><Link href="/contact-us">Contact</Link></li>
+                  <li><Link href="/about-me">About Me</Link></li>
                 </ul>
               </SheetContent>
             </Sheet>

@@ -29,11 +29,11 @@ export default function Home() {
             <Linkedin className="size-10" />
             <span>Linkedin Profile</span>
           </a>
-          <Link href="/co" className="flex flex-col items-center text-white">
+          <Link href="/contact-us" className="flex flex-col items-center text-white">
             <Mailbox className="size-10" />
             <span>Contact Me</span>
           </Link>
-          <Link href="/About" className="flex flex-col items-center text-white">
+          <Link href="/about-me" className="flex flex-col items-center text-white">
             <ScrollText className="size-10" />
             <span>About Me</span>
           </Link>

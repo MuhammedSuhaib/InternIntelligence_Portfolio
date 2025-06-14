@@ -79,7 +79,7 @@ export default function Timeline() {
                     <Linkedin className="size-10" />
                     <span>Linkedin Profile</span>
                 </a>
-                <Link href="/co" className="flex flex-col items-center text-white">
+                <Link href="/contact-us" className="flex flex-col items-center text-white">
                     <Mailbox className="size-10" />
                     <span>Contact Me</span>
                 </Link>

@@ -53,13 +53,14 @@ export default function Timeline() {
             {levels.map((item, index) => (
                 <div key={index} className="flex flex-col items-center py-5">
                     <div className="flex flex-col sm:flex-row gap-4 items-center">
+                        {/* those circles */}
                         <div
-                            className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden bg-cover bg-center flex justify-center items-center text-white font-bold text-sm sm:text-lg "
-                            style={{ backgroundImage: `url(/OO.jpg)` }}
+                            className="relative size-16 sm:w-20 sm:h-20 rounded-full overflow-hidden bg-cover bg-center flex justify-center items-center text-white font-bold text-sm sm:text-lg bg-[url(/OO.jpg)]"
                         >
                             {item.year}
                         </div>
-                        <div className="flex items-center gap-5 bg-white p-4 sm:p-5 rounded-md shadow-lg transition-all duration-500 hover:scale-105 text-center sm:text-left">
+                        {/* those boxes */}
+                        <div className="flex items-center gap-5 bg-white p-4 sm:p-5 rounded-2xl shadow-lg transition-all duration-500 hover:scale-105 text-center sm:text-left">
                             <p className="text-sm sm:text-lg text-black">{item.text}</p>
                         </div>
                     </div>

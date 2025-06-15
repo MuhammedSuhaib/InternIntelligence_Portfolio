@@ -7,12 +7,14 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["300", "400", "600"
 
 export default function Timeline() {
     const levels = [
+        { year: "2025-06", text: "Learning agentic AI with OpenAI SDK." },
+        { year: "2025-05", text: "Explored Python basics, OOP, Streamlit, and Google Colab" },
         { year: "2025-01", text: "Working on a presentation 'Learn Computing in 0 Day.'" },
         { year: "2025-01", text: "Completed front-end development training from GIAIC." },
         { year: "2024-08", text: "Developed an interest in internet security & backdoors." },
         { year: "2024", text: "Completed TypeScript course from GIAIC." },
         { year: "2023-12", text: "Taught basic computing to two young students." },
-        { year: "2023-07", text: "Learned fundamentals of web development (HTML, CSS, JavaScript)." },
+        { year: "2023-09", text: "Learned fundamentals of web development (HTML, CSS, JavaScript)." },
         { year: "2023-07", text: "Passed aptitude test at GIAIC." },
         { year: "2023", text: "Discovered AI-driven websites." },
         { year: "2023", text: "Learned Urdu typing." },

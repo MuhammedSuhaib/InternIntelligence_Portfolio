@@ -58,7 +58,7 @@ function Projects() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden transform transition duration-300 hover:scale-110"
+              className="overflow-hidden transform transition animate-duration-faster hover:animate-blink"
             >
               <a href={project.link} target="_blank" rel="noopener noreferrer" >
                 <CardHeader>

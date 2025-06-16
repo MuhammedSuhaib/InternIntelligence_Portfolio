@@ -11,6 +11,9 @@ importers:
       '@formspree/react':
         specifier: ^3.0.0
         version: 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@midudev/tailwind-animations':
+        specifier: ^0.2.0
+        version: 0.2.0(tailwindcss@3.4.17)
       '@radix-ui/react-dialog':
         specifier: ^1.1.2
         version: 1.1.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -158,6 +161,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@midudev/tailwind-animations@0.2.0':
+    resolution: {integrity: sha512-4mktb060dA7SZz0LjMfhBT30HWPmQENwF4AJC7/etESWohe4pukST0ohC2yAePS5GNinhY3MXmZZ8//2ywafOQ==}
+    peerDependencies:
+      tailwindcss: ^3.0.0 || ^4.0.0
 
   '@next/env@14.2.15':
     resolution: {integrity: sha512-S1qaj25Wru2dUpcIZMjxeMVSwkt8BK4dmWHHiBuRstcIyOsMapqT4A4jSB6onvqeygkSSmOkyny9VVx8JIGamQ==}
@@ -2100,6 +2108,10 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@midudev/tailwind-animations@0.2.0(tailwindcss@3.4.17)':
+    dependencies:
+      tailwindcss: 3.4.17
 
   '@next/env@14.2.15': {}
 

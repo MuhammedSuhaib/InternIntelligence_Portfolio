@@ -21,7 +21,6 @@ const techs = [
   { src: "/gemini.png", alt: "Gemini API", name: "Gemini API" },
   { src: "/firebase.png", alt: "Firebase", name: "Firebase" },
   { src: "/netlify.png", alt: "Netlify", name: "Netlify" },
-  // add more here
 ];
 
 export default function Technologies() {
@@ -36,7 +35,7 @@ export default function Technologies() {
       <ul className="flex flex-wrap justify-center gap-14 text-2xl bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 text-transparent bg-clip-text hover:bg-gradient-to-tl hover:to-fuchsia-950">
         {techs.map(({ src, alt, name }) => (
           <li key={name}
-          className="flex flex-col items-center transition-transform hover:scale-110 duration-300">
+            className="flex flex-col items-center transition-transform hover:animate-spin-clockwise ">
             <Image src={src} alt={alt} width={100} height={100} />
             <p className="text-center mt-2">{name}</p>
           </li>

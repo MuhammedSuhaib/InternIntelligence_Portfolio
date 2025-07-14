@@ -10,6 +10,7 @@ import { Merienda } from "next/font/google";
 const merienda = Merienda({ subsets: ["latin"], weight: ["400", "700"] });
 
 const projects = [
+  { link: `https://muhammedsuhaib.github.io/markdownResume/`, title: "Markdown Resume", description: "A simple, Jekyll-powered resume built using Markdown and GitHub Pages. Highlights skills, projects, and experience with a clean developer-friendly layout.", image: "/MuhammedResume.jpeg" },
   { link: `https://cyberdevs.netlify.app/`, title: "Firebase Chat PWA ", description: "Real-time multi-room PWA chat with Google Auth, built using Firebase, Next.js 15, and Tailwind CSS. No backend or SQL needed.", image: "/cyber.png" },
   { link: `https://push-notifcation-splitter.streamlit.app`, title: "Smartband Exam Hack", description: "A notification splitter tool designed to bypass exam restrictions using smartbands.", image: "/smartband.jpeg" },
   { link: `https://share.streamlit.io/user/muhammedsuhaib`, title: "All Streamlit Projects", description: "Collection of Streamlit apps built for learning and experimenting.", image: "/streamlit.jpeg" },
@@ -32,7 +33,7 @@ const projects = [
   { link: `https://next-js-page-routing.vercel.app/`, title: "Next.js Hot Reload Demo", description: "A project demonstrating Next.js Hot Reload feature.", image: "/hotReload.png" },
   { link: `https://hackathon-milestone-1-2-three.vercel.app/`, title: "static Resume Builder", description: "A static resume  using pure HTML and CSS.", image: "/plain.png" },
   // CLI
-  {link: `https://github.com/MuhammedSuhaib/uvpy/blob/master/atm.py`, title: "OOP Python CLI ATM",description: "An OOP-based terminal tool using uv for fast package management, styled with pyfiglet and colorama.",image: "/opp_atm.png"},
+  { link: `https://github.com/MuhammedSuhaib/uvpy/blob/master/atm.py`, title: "OOP Python CLI ATM", description: "An OOP-based terminal tool using uv for fast package management, styled with pyfiglet and colorama.", image: "/opp_atm.png" },
   { link: `https://github.com/MuhammedSuhaib/stickman_animation/blob/main/animated_stickman.bat`, title: "Stickman Animation", description: "A short 5–10s batch script animation made for fun during Ramazan.", image: "/stickman.png" },
   { link: `https://www.linkedin.com/posts/suhaib1_activity-7238076836780343296-H6YC?utm_source=social_share_send&utm_medium=member_desktop_web`, title: "CLI Ghost Image", description: "Displays a ghost image in the terminal using Chalk and animations.", image: "/ghoost.jpg" },
   { link: `https://github.com/MuhammedSuhaib/Fast-Quiz`, title: "CLI Quiz App", description: "A CLI-based quiz app built with TypeScript, Inquirer, and Chalk.", image: "/Quiz.jpg" },

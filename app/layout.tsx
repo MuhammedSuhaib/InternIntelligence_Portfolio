@@ -82,9 +82,10 @@ export default function RootLayout({
       <body
         className={`${abel.className} ${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-[#0d0b1f] via-[#1e0625] to-[#1b1b3a] transition-all hover:bg-gradient-to-tl hover:from-[#25162f] hover:via-[#0d0b1f] hover:to-[#0a0a0a]`}
       >
-        <Header />
-        {children}
-        <BubbleCursor />
+        {/* <Header /> */}
+        {/* {children} */}
+        {/* <BubbleCursor /> */}
+        This deployment is temporarily paused
       </body>
     </html>
   );

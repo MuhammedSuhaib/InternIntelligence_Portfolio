@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Abel } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import BubbleCursor from "@/components/ui/BubbleCursor";
+// import Header from "@/components/Header";
+// import BubbleCursor from "@/components/ui/BubbleCursor";
 
 const abel = Abel({ subsets: ["latin"], weight: ["400"], variable: "--font-abel" });
 

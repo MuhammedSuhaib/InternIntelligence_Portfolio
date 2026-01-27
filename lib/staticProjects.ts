@@ -1,19 +1,5 @@
-"use client"
-import { useState, useEffect } from 'react';
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import Image from "next/image";
-import { Merienda } from "next/font/google";
-
-const merienda = Merienda({ subsets: ["latin"], weight: ["400", "700"] });
-
-// Static fallback projects
-const staticProjects = [
+// Static projects data
+export const staticProjects = [
   { id: "static1", link: `https://muhammedsuhaib.github.io/markdownResume/`, title: "Markdown Resume", description: "A simple, Jekyll-powered resume built using Markdown and GitHub Pages. Highlights skills, projects, and experience with a clean developer-friendly layout.", image: "/MuhammedResume.jpeg", category: "web" },
   { id: "static2", link: `https://cyberdevs.netlify.app/`, title: "Firebase Chat PWA ", description: "Real-time multi-room PWA chat with Google Auth, built using Firebase, Next.js 15, and Tailwind CSS. No backend or SQL needed.", image: "/cyber.png", category: "web" },
   { id: "static3", link: `https://push-notifcation-splitter.streamlit.app`, title: "Smartband Exam Hack", description: "A notification splitter tool designed to bypass exam restrictions using smartbands.", image: "/smartband.jpeg", category: "web" },
@@ -52,103 +38,11 @@ const staticProjects = [
   { id: "static35", link: `https://github.com/MuhammedSuhaib/45-taks.git`, title: "Node.js TypeScript Tasks", description: "A collection of 45 TypeScript tasks built with Node.js.", image: "/45.png", category: "cli" },
 ];
 
-interface Project {
+export interface StaticProject {
   id: string;
   title: string;
   description: string;
   link: string;
   image: string;
   category: string;
-  uploadedAt?: any;
-  isStatic?: boolean;
-  originalStaticId?: string;
 }
-
-function Projects() {
-  const [dynamicProjects, setDynamicProjects] = useState<Project[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [useDynamic, setUseDynamic] = useState(false);
-
-  useEffect(() => {
-    const fetchDynamicProjects = async () => {
-      try {
-        const response = await fetch('/api/projects');
-        if (response.ok) {
-          const data = await response.json();
-          if (data.projects && data.projects.length > 0) {
-            setDynamicProjects(data.projects);
-            setUseDynamic(true);
-          }
-        }
-      } catch (error) {
-        console.error('Error fetching dynamic projects:', error);
-        // Continue with static projects
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchDynamicProjects();
-  }, []);
-
-  const projectsToDisplay = useDynamic ? dynamicProjects : staticProjects;
-
-  if (loading && !dynamicProjects.length) {
-    return (
-      <div className="flex justify-center items-center py-20">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#611197]"></div>
-      </div>
-    );
-  }
-
-  return (
-    <div id="pro" className="flex flex-col items-center justify-center gap-6 py-10 px-6">
-      <h1 className={`${merienda.className} mt-6 pb-16 bg-gradient-to-br from-fuchsia-400 via-violet-600 to-emerald-300 bg-clip-text text-6xl text-transparent}`}>
-        Projects
-      </h1>
-      <ul>
-        <li className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {projectsToDisplay.map((project) => (
-            <Card
-              key={project.id}
-              className="overflow-hidden transform transition animate-duration-faster hover:animate-blink"
-            >
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <CardHeader>
-                  {project.image?.startsWith('data:image/') ? (
-                    <Image
-                      src={project.image}
-                      width={400}
-                      height={200}
-                      alt={project.title}
-                      className="rounded-t-lg object-cover w-full h-48"
-                    />
-                  ) : (
-                    <Image
-                      src={project.image}
-                      width={400}
-                      height={200}
-                      alt={project.title}
-                      className="rounded-t-lg object-cover w-full h-48"
-                      unoptimized // For external images
-                    />
-                  )}
-                </CardHeader>
-                <CardContent className="p-4 bg-[#b916fa1f]">
-                  <CardTitle className="text-lg font-semibold text-center text-white">
-                    {project.title}
-                  </CardTitle>
-                </CardContent>
-                <CardFooter className="p-4 text-center text-sm text-white">
-                  {project.description}
-                </CardFooter>
-              </a>
-            </Card>
-          ))}
-        </li>
-      </ul>
-    </div>
-  );
-}
-
-export default Projects;

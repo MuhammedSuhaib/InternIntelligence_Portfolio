@@ -14,13 +14,13 @@ const projects = [
     link: `https://console-to-cloud.netlify.app/`,
     title: "Full-Stack Todo Application",
     description: "Modern full-stack todo application built with Next.js 16+, FastAPI, and Better Auth for authentication. Complete task management solution with user authentication, data isolation, and AI agent integration that can perform CRUD operations on your behalf.",
-    image: "/todo-app.jpg",
+    image: "/MicroTasksAI.png",
   },
   {
     link: `https://muhammedsuhaib.github.io/SpecKit-Plus/`,
     title: "Physical AI & Humanoid Robotics: Interactive Textbook",
     description: "Interactive learning platform featuring a complete textbook with intelligent RAG chatbot. Combines Docusaurus frontend with FastAPI backend for enhanced learning experience. Features Matrix-themed UI, Qdrant vector database, and Better-auth authentication.",
-    image: "/physical-ai-textbook.jpg",
+    image: "/HumanoidsRobotics.png",
   },
   {
     link: `https://muhammedsuhaibhackathon2.vercel.app/`,
@@ -44,16 +44,16 @@ const projects = [
     image: "/agent.png",
   },
   {
-    link: `https://github.com/MuhammedSuhaib/Youtube`,
+    link: `https://suhaibtube.netlify.app/`,
     title: "YouTube Clone",
-    description: "Modern YouTube clone built with Next.js featuring video browsing, offline connectivity detection, responsive design, and seamless video playback. Includes custom navigation, sidebar, and video grid components.",
-    image: "/youtube-clone.jpg",
+    description: "Simple YouTube homepage powered by the YouTube Data API v3, built with Next.js, featuring video browsing, offline connectivity detection and seamless video playback. Includes custom navigation, sidebar, and video grid components.",
+    image: "/Youtube.png",
   },
   {
     link: `https://github.com/MuhammedSuhaib/multi_agent`,
     title: "Multi-Agent AI System",
     description: "Sophisticated multi-agent system with specialized agents for different domains. Features math and physics agents with tool integration, dynamic instructions, and guardrails for safe AI interactions.",
-    image: "/multi-agent.jpg",
+    image: "/whoIsSuhaib.jpg",
   },
   {
     link: `https://hackathon-milestone-3-4-5-alpha.vercel.app/`,
@@ -275,13 +275,13 @@ const projects = [
     link: `https://github.com/MuhammedSuhaib/finance-tracker`,
     title: "Personal Finance Tracker CLI",
     description: "Professional CLI application for tracking expenses, income, budgets, and generating financial insights. Built with Python, questionary, rich, and uv.",
-    image: "/finance-tracker.jpg",
+    image: "/levelupspeckit-plus.png",
   },
   {
     link: `https://github.com/MuhammedSuhaib/LevelUpSpeckit-Plus`,
     title: "LevelUpSpeckit-Plus - AI Productivity Toolkit",
     description: "Comprehensive toolkit for students working with AI agents in coding projects. Includes solutions for multi-agent coordination, audio notifications, token management, and specialized AI skills for hackathons.",
-    image: "/levelupspeckit-plus.jpg",
+    image: "/levelupspeckit-plus.png",
   },
 ];
 

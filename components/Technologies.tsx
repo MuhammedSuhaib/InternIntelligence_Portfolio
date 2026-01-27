@@ -21,6 +21,17 @@ const techs = [
   { src: "/gemini.png", alt: "Gemini API", name: "Gemini API" },
   { src: "/firebase.png", alt: "Firebase", name: "Firebase" },
   { src: "/netlify.png", alt: "Netlify", name: "Netlify" },
+  // { src: "/sanity.png", alt: "Sanity CMS", name: "Sanity CMS" },
+  // { src: "/stripe.png", alt: "Stripe", name: "Stripe" },
+  // { src: "/Fastapi.png", alt: "Fastapi", name: "Stripe" },
+  // { src: "/Neon.png", alt: "Neon", name: "Stripe" },
+  // { src: "/docker.png", alt: "docker", name: "Stripe" },
+  // { src: "/kubernetes.png", alt: "kubernetes", name: "Stripe" },
+  // { src: "/claude code.png", alt: "kubernetes", name: "Stripe" },
+  // { src: "/hugginface.png", alt: "kubernetes", name: "Stripe" },
+  // { src: "/docussarus.png", alt: "kubernetes", name: "Stripe" },
+  // { src: "/better-aut .png", alt: "kubernetes", name: "Stripe" },
+  // { src: "/mcp servers.png", alt: "kubernetes", name: "Stripe" },
 ];
 
 export default function Technologies() {

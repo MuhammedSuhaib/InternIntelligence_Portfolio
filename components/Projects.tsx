@@ -56,11 +56,11 @@ const projects = [
     image: "/whoIsSuhaib.jpg",
   },
   {
-    link: `https://hackathon-milestone-3-4-5-alpha.vercel.app/`,
+    link: `https://muhammedsuhaib.github.io/Resume_Builder/InteractiveResume/`,
     title: "Interactive Resume Builder",
     description:
       "A resume builder with interactive features using pure HTML and CSS.",
-    image: "/resume.jpg",
+    image: "/resume.jpeg",
   },
   {
     link: `https://instagrem-com.netlify.app/`,

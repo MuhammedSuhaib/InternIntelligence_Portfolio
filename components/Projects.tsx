@@ -37,7 +37,7 @@ const projects = [
     image: "/cyber.png",
   },
   {
-    link: `https://github.com/MuhammedSuhaib/gemini_Openai-Agent`,
+    link: `https://muhammedsuhaib-giaiclinkedinposts.hf.space/`,
     title: "AI Agent (Gemini + OpenAI)",
     description:
       "AI agent using both Gemini and OpenAI, shared in a LinkedIn post.",

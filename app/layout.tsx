@@ -4,6 +4,7 @@ import { Abel } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import BubbleCursor from "@/components/ui/BubbleCursor";
+import ChainlitBot from "@/components/ChainlitBot";
 
 const abel = Abel({ subsets: ["latin"], weight: ["400"], variable: "--font-abel" });
 
@@ -85,6 +86,7 @@ export default function RootLayout({
         <Header /> 
         {children} 
         <BubbleCursor /> 
+        <ChainlitBot /> 
       </body>
     </html>
   );

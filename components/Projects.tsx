@@ -23,7 +23,7 @@ const projects = [
     image: "/HumanoidsRobotics.png",
   },
   {
-    link: `https://muhammedsuhaibhackathon2.vercel.app/`,
+    link: `https://hekkto.netlify.app/`,
     title: "E-commerce Shopping Website",
     description:
       "A full-stack e-commerce platform built with Next.js, Tailwind CSS, and Sanity CMS. Features responsive design, dynamic product display, cart functionality, search, and secure payment processing with Stripe.",
